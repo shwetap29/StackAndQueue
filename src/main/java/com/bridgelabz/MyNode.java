@@ -29,9 +29,4 @@ public class MyNode <T> implements INode<T> {
         this.next = next;
     }
 
-    /* print welcome message */
-    public void printWelcomeMessage() {
-        System.out.println("Welcome to the Data Structure Problem");
-    }
-
 }

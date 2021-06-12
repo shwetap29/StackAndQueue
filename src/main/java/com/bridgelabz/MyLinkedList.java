@@ -108,5 +108,4 @@ public class MyLinkedList <T extends Comparable<T>> {
             tempNode = tempNode.getNext();
         }
     }
-
 }

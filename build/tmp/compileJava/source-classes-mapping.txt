@@ -1,7 +1,7 @@
-com/bridgelabz/MyNode.java
- com.bridgelabz.MyNode
 com/bridgelabz/INode.java
  com.bridgelabz.INode
+com/bridgelabz/MyNode.java
+ com.bridgelabz.MyNode
 com/bridgelabz/MyLinkedList.java
  com.bridgelabz.MyLinkedList
 com/bridgelabz/Stack.java
