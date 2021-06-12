@@ -35,20 +35,20 @@ public class MyLinkedList <T extends Comparable<T>> {
     }
 
     // Insert Node Between Nodes
-    public void insertNode(INode<Integer> myFirstNode, INode<Integer> mySecondNode) {
+        public void insertNode(INode<Integer> myFirstNode, INode<Integer> mySecondNode) {
         mySecondNode.setNext(myFirstNode.getNext());
         myFirstNode.setNext(mySecondNode);
     }
 
     // Delete/Pop First Node
-    public INode<T> popFirst() {
+        public INode<T> popFirst() {
         INode tempNode = this.head;
         this.head = this.head.getNext();
         return tempNode;
     }
 
     // Delete Pop Last Node
-    public INode<T> popLast() {
+        public INode<T> popLast() {
         INode<T> tempNode = head;
         while (!(tempNode.getNext().equals(tail))) {
             tempNode = tempNode.getNext();
@@ -59,7 +59,7 @@ public class MyLinkedList <T extends Comparable<T>> {
     }
 
     // Search Node with given key
-    public INode<T> searchNode(T key) {
+        public INode<T> searchNode(T key) {
         INode<T> tempNode = this.head;
         while (tempNode != null) {
             if (tempNode.getData() == key) {
@@ -71,7 +71,7 @@ public class MyLinkedList <T extends Comparable<T>> {
     }
 
     // delete the specified element from the linked list
-    public void popNode(T key) {
+        public void popNode(T key) {
         INode<T> tempNode = head;
         while (tempNode.getNext().getData() != key) {
             tempNode = tempNode.getNext();
@@ -79,7 +79,7 @@ public class MyLinkedList <T extends Comparable<T>> {
         tempNode.setNext(tempNode.getNext().getNext());
     }
 
-    public int getSize() {
+     public int getSize() {
         int size = 0;
         INode<T> tempNode = head;
         while (tempNode != null) {
